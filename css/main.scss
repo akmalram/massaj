@@ -107,6 +107,41 @@
     }
 }
 
+.types {
+    background: url(https://prestige.uz/wp-content/themes/prestige/img/9.png) no-repeat center center;
+    background-size: contain;
+
+    .row {
+        justify-content: space-evenly;
+    }
+
+    .type {
+        @include col();
+        @include size(8);
+        @include size-sm(12);
+        @include size-xs(24);
+
+        max-width: 300px;
+        font-size: 20px;
+        padding: 30px 20px;
+        box-sizing: border-box;
+
+        text-align: center;
+
+        span {
+            width: 70px;
+            height: 70px;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 50px;
+            background: rgb(195,90,240);
+            color: #fff;
+            border-radius: 50%;
+        }
+    }
+}
+
 .register {
     @include content-padding();
 

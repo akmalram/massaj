@@ -53,6 +53,42 @@ header .header-top .left b {
   font-size: 24px;
 }
 
+@media screen and (max-width: 576px) {
+  header .header-top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .header-top .date {
+    margin-right: 0;
+    font-size: 13px;
+  }
+  header .header-top .date span {
+    font-size: 13px;
+  }
+  header .header-top .date .icon {
+    width: 30px;
+  }
+  header .header-top .date .count {
+    font-size: 30px;
+  }
+  header .header-top .left {
+    font-size: 13px;
+    text-align: left;
+  }
+  header .header-top .left .icon {
+    width: 50px;
+    margin-right: 5px;
+  }
+  header .header-top .left b {
+    font-size: 14px;
+  }
+}
+
 header .page-title {
   margin-top: 140px;
   color: #373a40;
@@ -73,11 +109,9 @@ header .page-desc {
 header .btn-primary {
   color: #ffffff;
   font-size: 22px;
-  line-height: 1.55;
-  font-weight: 700;
   border-width: 1px;
   border-radius: 50px;
-  padding: 20px 30px;
+  padding: 10px 20px;
   background-color: #5500ff;
   -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
@@ -124,15 +158,6 @@ header .content-img {
   header {
     min-height: auto;
   }
-  header .header-top {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
   header .page-title {
     font-size: 37px;
   }
@@ -159,15 +184,6 @@ header .content-img {
           align-items: center;
 }
 
-@media screen and (max-width: 768px) {
-  .navbar-inner {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-}
-
 .navbar-inner .navbar-contacts {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -177,52 +193,66 @@ header .content-img {
           align-items: center;
 }
 
-@media screen and (max-width: 576px) {
-  .navbar-inner .navbar-contacts {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-}
-
-.navbar-inner .call-order {
-  margin-left: 10px;
-}
-
-@media screen and (max-width: 576px) {
-  .navbar-inner .call-order {
-    margin-top: 20px;
-  }
-}
-
 .navbar-inner .call-order .btn-primary {
   padding: 10px 20px;
 }
 
 .navbar-inner .telegram {
-  text-align: right;
-}
-
-@media screen and (max-width: 576px) {
-  .navbar-inner .telegram {
-    text-align: center;
-  }
+  margin-left: 10px;
 }
 
 .navbar-inner .telegram a {
-  font-size: 25px;
-  color: #333;
+  font-size: 18px;
+  color: #fff;
 }
 
 .navbar-inner .telegram a:focus, .navbar-inner .telegram a:hover {
   text-shadow: 0 0 5px #333;
 }
 
+.navbar-inner .phone-call {
+  text-align: right;
+}
+
 .navbar-inner .phone-call a {
   font-size: 21px;
   color: #333;
   text-decoration: underline;
+}
+
+@media screen and (max-width: 576px) {
+  .navbar-inner .navbar-contacts {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 30px;
+    text-align: right;
+  }
+  .navbar-inner .call-order .btn-primary {
+    font-size: 13px;
+    padding: 7px 10px;
+  }
+  .navbar-inner .telegram {
+    margin-left: 0px;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+  .navbar-inner .telegram a {
+    padding: 5px;
+  }
+  .navbar-inner .telegram a i {
+    font-size: 24px;
+  }
+  .navbar-inner .telegram a span {
+    display: none;
+  }
+  .navbar-inner .phone-call {
+    text-align: center;
+  }
+  .navbar-inner .phone-call a {
+    font-size: 13px;
+  }
 }
 
 .check-list {
