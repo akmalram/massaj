@@ -1,0 +1,271 @@
+body, div, dl, dt, dd, ul, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, input, textarea, p, blockquote, th, td {
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+fieldset, img, abbr {
+  border: 0;
+}
+
+address, caption, cite, code, dfn, em, strong, th, var {
+  font-style: normal;
+  font-weight: normal;
+}
+
+ul li {
+  list-style: none;
+}
+
+caption, th {
+  text-align: left;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+sup {
+  vertical-align: text-top;
+}
+
+sub {
+  vertical-align: text-bottom;
+}
+
+input, textarea, select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+legend {
+  color: #000;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, main {
+  display: block;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.ps {
+  font-style: italic;
+  font-size: 14px;
+}
+
+.row-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.form {
+  width: 500px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.form-input {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px 20px;
+  font-size: 20px;
+  margin: 10px 0;
+  border: 2px solid grey;
+}
+
+.form-input:focus {
+  outline: none;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.show-xs {
+  display: none;
+}
+
+@media screen and (max-width: 576px) {
+  .show-xs {
+    display: block;
+  }
+}
+
+.show-sm {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .show-sm {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hide-sm {
+    display: none !important;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.title-primary {
+  font-size: 50px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .title-primary {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .title-primary {
+    font-size: 24px;
+  }
+}
+
+.title-primary.white {
+  color: #fff;
+}
+
+.title-tertiary {
+  font-size: 23px;
+  color: #333;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .title-tertiary {
+    font-size: 20px;
+  }
+}
+
+.hr {
+  width: 300px;
+  height: 3px;
+  background-color: #333;
+  margin: 30px auto;
+}
+
+.title-secondary {
+  font-size: 25px;
+  line-height: 34px;
+  font-weight: normal;
+  color: #333;
+  text-align: center;
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .title-secondary {
+    font-size: 22px;
+    line-height: 25px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .title-secondary {
+    font-size: 18px;
+    line-height: 23px;
+  }
+}
+
+.title-secondary.white {
+  color: #fff;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.btn-primary {
+  color: #ffffff;
+  font-size: 22px;
+  line-height: 1.55;
+  font-weight: 700;
+  border-width: 1px;
+  border-radius: 100px;
+  padding: 20px 30px;
+  background-color: #5500ff;
+  -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  -webkit-box-shadow: 0px 0px 30px 3px rgba(119, 81, 197, 0.6);
+          box-shadow: 0px 0px 30px 3px rgba(119, 81, 197, 0.6);
+  position: relative;
+}
+
+.btn-primary img {
+  width: 60px;
+  position: absolute;
+  top: 0%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 0px;
+}
+
+.btn-primary:hover {
+  background-color: #7840ab;
+}
+
+@media only screen and (max-width: 576px) {
+  .btn-primary {
+    font-size: 16px;
+    line-height: 1;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    border-width: 0px;
+  }
+}
+/*# sourceMappingURL=general.css.map */

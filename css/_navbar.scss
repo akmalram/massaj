@@ -1,0 +1,187 @@
+@mixin navbar($navbarHeight, $containerWidth, $color-primary) {
+    overflow: hidden;
+    .navbar {
+        padding: 20px 0;
+        background: #fff;
+        width: 100%;
+        min-height: $navbarHeight;
+
+        a {
+            color: $color-primary;
+        }
+
+        &-container {
+            width: $containerWidth;
+            max-width: 90%;
+            margin: 0 auto;
+            min-height: $navbarHeight;
+        }
+
+        &-inner {
+            min-height: $navbarHeight;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo a {
+            font-size: 30px;
+            color: $color-primary;
+            text-align: right;
+
+            span {
+                font-size: 12px;
+                display: block;
+            }
+        }
+        
+
+    }
+
+    .navbar-contacts {
+        display: flex;
+        align-items: center;
+
+        .social-icons {
+            margin-left: 10px;
+            a {
+                display: block;
+                font-size: 25px;
+                color: $color-primary;
+                transition: all .3s;
+
+                &:hover {
+                    text-shadow: 0 0 3px $color-primary;
+                }
+            }
+        }
+    }
+
+    .phone-call a {
+        color: $color-primary;
+        font-size: 16px;
+        line-height: 14px;
+        white-space: nowrap;
+        display: block;
+
+        &:not(:last-of-type) {
+            margin-bottom: 5px;
+        }
+
+        i {
+            display: inline-block;
+            font-size: 20px;
+            margin-right: 5px;
+            color: #333;
+        }
+    }
+
+
+    @media only screen and (max-width: 1024px) {
+        .navbar.undermenu {
+            .navbar-inner {
+                flex-wrap: wrap;
+            }
+            .logo {
+                order: 2;
+                width: 33.333%;
+                text-align: center;
+            }
+
+            .navbar-contacts {
+                order: 1;
+
+                .phone-call {
+                    span {
+                        display: none;
+                    }
+                    width: 33.333%;
+                }
+
+                .social-icons {
+                    display: flex;                    
+                    a {
+                        display: inline-block;
+                        margin: 0 5px;
+                    }
+                }
+            }
+        }
+
+        .navbar.slidedown {
+
+            .navbar-inner {
+                flex-wrap: wrap;
+            }
+
+            .logo {
+                order: 2;
+                width: 33.333%;
+                text-align: center;
+            }
+
+            .navbar-contacts {
+                order: 1;
+
+                .phone-call {
+                    span {
+                        display: none;
+                    }
+                    width: 33.333%;
+                }
+
+                .social-icons {
+                    display: flex;                    
+                    a {
+                        display: inline-block;
+                        margin: 0 5px;
+                    }
+                }
+            }
+        }
+
+        .navbar.slideleft {
+            position: relative;
+            flex-wrap: wrap;
+            .phone-call {
+                order: 2;
+                span {
+                    display: none;
+                }
+                width: 33.3333%;
+            }
+
+            .logo {
+                order: 1;
+                width: 33.3333%;
+                text-align: center;
+            }
+            
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        .navbar.undermenu {
+            overflow: hidden;
+        }
+    }
+
+    @media only screen and (max-width: 510px) {
+
+        .phone-call {
+            width: 33.333%;
+            span {
+                display: none;
+            }
+        }
+    }
+    
+}
+
+// Parameters 
+// 1. Height of the navbar
+// 2. Width of the Container
+
+// Navbar modes
+// 1.undermenu
+// 2. slideleft 

@@ -1,0 +1,400 @@
+@import '../css/smart-grid';
+@import '../css/mixins';
+
+.for-who {
+    @include content-padding();
+    .title-primary {
+        text-align: left;
+        font-weight: 700;
+
+        @include sm-block {
+            text-align: center;
+        }
+    }
+
+    .row {
+        justify-content: space-evenly;
+    }
+
+    .item {
+        @include col();
+        @include size(8);
+        @include size-sm(24);
+
+        max-width: 370px;
+
+
+        .title {
+            color: #f43076;
+            font-size: 26px;
+            font-weight: 700;
+            margin: 20px 0;
+        }
+        
+        .text {
+            font-size: 18px;
+            line-height: 1.3em;
+        }
+
+        @include sm-block {
+            text-align: center;
+
+            .title {
+                font-size: 23px;
+            }
+
+            .text {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+.result {
+    @include content-padding();
+
+    .title-big {
+        color: #f43076;
+        font-size: 60px;
+        line-height: 1;
+        font-weight: 700;
+        text-align: center;
+
+        @include xs-block {
+            font-size: 34px;
+        }
+    }
+
+    .title-secondary {
+        margin-bottom: 70px;
+
+        @include xs-block {
+            margin-bottom: 40px;
+        }
+    }
+
+    .title-primary {
+        font-weight: bold;
+        color: #f43076;
+        margin-bottom: 50px;
+    }
+
+    .row {
+        justify-content: space-evenly;
+    }
+
+    .item {
+        @include col();
+        @include size(8);
+        @include size-sm(24);
+
+        max-width: 350px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-bottom: 30px;
+
+        .icon {
+            width: 150px;
+        }
+
+        .text {
+            padding-left: 20px;
+            box-sizing: border-box;
+            font-size: 17px;
+            line-height: 1.3em;
+        }
+    }
+}
+
+.register {
+    @include content-padding();
+
+    .file {
+        display: flex;
+        align-items: center;
+
+        width: 400px;
+        max-width: 90%;
+        margin: 0 auto;
+        margin-top: 50px;
+
+        img {
+            width: 100px;
+        }
+    }
+
+    .price {
+        font-size: 35px;
+        margin: 30px;
+
+        .price-crossed-out {
+            color: rgba(0, 0, 0, 0.301);
+            display: inline-block;
+            position: relative;
+
+            &::before {
+                content: "";
+                background: #f43076;
+                height: 2px;
+                width: 100%;
+                display: inline-block;
+                position: absolute;
+                top: 50%;
+                left: 0;
+                transform: rotate(-2deg);
+            }
+        }
+
+        .price-new {
+            font-weight: bold;
+        }
+    }
+
+    @include xs-block {
+        .file {
+            display: flex;
+            align-items: center;
+
+            max-width: 90%;
+            margin: 0 auto;
+            margin-top: 20px;
+            font-size: 13px;
+    
+            img {
+                width: 70px;
+            }
+        }
+        .price {
+            font-size: 15px;
+            margin: 30px;
+        }
+
+        .btn-primary {
+
+        }
+    }
+}
+
+.color-primary {
+    color: #f43076;
+}
+
+.expert {
+    .photo, .content {
+        @include col();
+        @include size(12);
+        @include size-sm(24);
+    }
+
+
+
+    .page-desc {
+        color: #000000;
+        font-size: 25px;
+        line-height: 1;
+        font-weight: 300;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .content {
+        .title {
+            color: #373a40;
+            font-size: 50px;
+            line-height: 1;
+            font-weight: 600;
+        }
+        .desc {
+            color: #000000;
+            font-size: 24px;
+            line-height: 1.1;
+            font-weight: 300;
+        }
+        .info.row {
+            margin: 40px 0;
+            .item {
+                @include col();
+                @include size(8);
+                @include size-xs(24);
+                max-width: 300px;
+                text-align: center;
+                margin-bottom: 30px;
+            }
+
+            .count {
+                width: 80px;
+                height: 80px;
+                background: url(https://static.tildacdn.com/tild6230-3436-4366-b137-656532633633/Group.svg) no-repeat center center;
+                background-size: 100% 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 33px;
+                color: #fff;
+                margin: 0 auto;
+            }
+
+            .text {
+                font-size: 14px;
+            }
+        }
+
+        .author-info {
+            &-title {
+                font-size: 20px;
+                line-height: 1.55;
+                font-weight: 600;
+                margin-bottom: 10px;
+            }
+
+            &-text {
+                font-size: 20px;
+                line-height: 1.55;
+                font-weight: 300;
+            }
+        }
+    }
+
+    @include sm-block {
+        .photo {
+            order: 2;
+        }
+
+        .content {
+            text-align: center;
+
+            .title {
+                font-size: 40px;
+            }
+            .desc {
+                font-size: 20px;
+            }
+        }
+    }
+
+    @include xs-block {
+        .page-desc {
+            font-size: 16px;
+        }
+
+        .content {
+            .title {
+                font-size: 30px;
+            }
+            
+            .desc {
+                font-size: 16px;
+            }
+
+            .info.row {
+                margin: 40px 0;
+    
+                .item {
+                    @include col();
+                    @include size(8);
+                    @include size-xs(24);
+                    text-align: center;
+                }
+    
+                .text {
+                    font-size: 17px;
+                }
+            }
+    
+            .author-info {
+                &-title {
+                    font-size: 18px;
+                }
+    
+                &-text {
+                    font-size: 16px;
+                    text-align: justify;
+                }
+            }
+        }
+
+    }
+}
+
+.gallery {
+    @include content-padding();
+
+    .title-primary {
+        margin-bottom: 35px;
+    }
+
+    .swiper-button-next, .swiper-button-prev {
+        background: #f43076;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 34px;
+        color: #fff;
+
+        @include sm-block {
+            width: 30px;
+            height: 30px;
+            font-size: 18px;
+        }
+    }
+}
+
+.contact-form {
+    @include content-padding();
+    background: rgb(233, 233, 233);
+    color: #000;
+
+    .color-primary {
+        color: #f43076;
+    }
+
+    .title-primary {
+        color: #000;
+    }
+
+    .page-desc {
+        font-size: 20px;
+    }
+    .form {
+        margin-top: 50px;
+        margin-bottom: 50px;
+
+        &-input {
+            border-color: #f43076;
+            margin-bottom: 40px;
+
+            @include xs-block {
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    .btn-primary {
+        font-size: 23px;
+        
+        span {
+            display: block;
+            font-size: 11px;
+        }
+
+        @include xs-block {
+            box-shadow: none;
+            padding: 10px 15px;
+        }
+    }
+
+    @include xs-block {
+        .title-primary {
+            font-size: 23px;
+            line-height: 1.3em;
+        }
+
+        .page-desc {
+            font-size: 15px;
+        }
+    }
+}
