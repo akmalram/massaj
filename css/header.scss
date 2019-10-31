@@ -1,5 +1,6 @@
 @import './navbar';
 @import './smart-grid';
+@import './modal';
 
 $color-primary: #f9eb2d;
 
@@ -139,6 +140,57 @@ header {
     }
 }
 
+.navbar-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include sm-block {
+        flex-direction: column;
+    }
+
+    .navbar-contacts {
+        display: flex;
+        align-items: center;
+
+        @include xs-block {
+            flex-direction: column;
+        }
+    }
+    
+    .call-order {
+        margin-left: 10px;
+        
+        @include xs-block {
+            margin-top: 20px;
+        }
+
+        .btn-primary {
+            padding: 10px 20px;
+        }
+    }
+
+    .telegram {
+        text-align: right;
+        @include xs(text-align, center);
+
+        a {
+            font-size: 25px;
+            color: #333;
+
+            &:focus, &:hover {
+                text-shadow: 0 0 5px #333;
+            }
+        }
+    }
+
+    .phone-call a {
+        font-size: 21px;
+        color: #333;
+        text-decoration: underline;
+    }
+}
+
 .check-list {
     display: flex;
     align-items: center;
@@ -183,5 +235,29 @@ header {
         p {
             margin: 10px 0;
         }
+    }
+}
+
+
+
+.call-order-modal {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 11;
+
+    .background {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: #00000067;
+    }
+
+    .content {
+        z-index: 123;
     }
 }

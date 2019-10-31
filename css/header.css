@@ -147,6 +147,84 @@ header .content-img {
   }
 }
 
+.navbar-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.navbar-inner .navbar-contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 576px) {
+  .navbar-inner .navbar-contacts {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.navbar-inner .call-order {
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 576px) {
+  .navbar-inner .call-order {
+    margin-top: 20px;
+  }
+}
+
+.navbar-inner .call-order .btn-primary {
+  padding: 10px 20px;
+}
+
+.navbar-inner .telegram {
+  text-align: right;
+}
+
+@media screen and (max-width: 576px) {
+  .navbar-inner .telegram {
+    text-align: center;
+  }
+}
+
+.navbar-inner .telegram a {
+  font-size: 25px;
+  color: #333;
+}
+
+.navbar-inner .telegram a:focus, .navbar-inner .telegram a:hover {
+  text-shadow: 0 0 5px #333;
+}
+
+.navbar-inner .phone-call a {
+  font-size: 21px;
+  color: #333;
+  text-decoration: underline;
+}
+
 .check-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -201,5 +279,27 @@ header .content-img {
 
 .check-list .popup-content p {
   margin: 10px 0;
+}
+
+.call-order-modal {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 11;
+}
+
+.call-order-modal .background {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #00000067;
+}
+
+.call-order-modal .content {
+  z-index: 123;
 }
 /*# sourceMappingURL=header.css.map */

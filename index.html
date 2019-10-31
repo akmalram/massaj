@@ -17,39 +17,84 @@
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/modals.css">
 
     <!-- JS scripts -->
     <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js'></script>
     <script src="./js/script.js"></script>
+    <script src="./js/modal.js"></script>
 
 </head>
 <body>
+    <div class="modal call-order-modal">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            <h2 class="modal-heading">Заказать звонок</h2>
+            <form action="/" class="call-order-form">
+                <input class="modal-input-name" type="text" name="name" placeholder="Ваше имя">
+                <input class="modal-input-phone" type="tel" name="phone" placeholder="Ваш номер">
+                <input class="modal-submit btn-primary" type="submit" value="Отправить">
+            </form>
+            <div class="close-btn">+</div>
+        </div>
+    </div>
+    <div class="modal register-modal">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            <h2 class="modal-heading">Зарегестрироваться</h2>
+            <form action="/" class="call-order-form">
+                <input class="modal-input-name" type="text" name="name" placeholder="Ваше имя">
+                <input class="modal-input-phone" type="tel" name="phone" placeholder="Ваш номер">
+                <input class="modal-submit btn-primary" type="submit" value="Отправить">
+            </form>
+            <div class="close-btn">+</div>
+        </div>
+    </div>
     <header>
-        <div class="container">
-            <div class="content">
-                <div class="header-top">
-                    <div class="date">
-                        <div class="icon">
-                            <img src="./img/clock.png" alt="Clock">
+        <nav class="navbar">
+            <div class="container">
+                <div class="navbar-inner">
+                    <div class="header-top">
+                        <div class="date">
+                            <div class="icon">
+                                <img src="./img/clock.png" alt="Clock">
+                            </div>
+                            <p class="count">30</p>
+                            <p>
+                                ОКТЯБРЯ
+                                <span>
+                                    19:15 МСК
+                                </span>
+                            </p>
                         </div>
-                        <p class="count">30</p>
-                        <p>
-                            ОКТЯБРЯ
-                            <span>
-                                19:15 МСК
-                            </span>
-                        </p>
+                        <div class="left">
+                            <div class="icon">
+                                <img src="./img/seats.png" alt="Seats">
+                            </div>
+                            <p><b>36</b> свободных <br> мест на лекцию</p>
+                        </div>
                     </div>
-                    <div class="left">
-                        <div class="icon">
-                            <img src="./img/seats.png" alt="Seats">
+                    <div class="navbar-contacts">
+                        <div>
+                            <div class="telegram">
+                                <a href="#"><i class="fab fa-telegram"></i></a>
+                            </div>
+                            <div class="phone-call">
+                                <a href="tel:+998911234567">+998(91) 123-45-67</a>
+                            </div>
                         </div>
-                        <p><b>36</b> свободных <br> мест на лекцию</p>
+                        <div class="call-order">
+                            <button class="btn-primary call-order-btn">Заказать звонок</button>
+                        </div>
                     </div>
                 </div>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="content">
                 <h1 class="page-title">Бесплатная лекция</h1>
                 <p class="page-desc">«Как научиться продвигать профили в соцсетях так, чтобы за это платили»</p>
-                <button class="btn-primary">Зарегистрируйтесь</button>
+                <button class="btn-primary register-modal-btn">Зарегистрируйтесь</button>
                 <div class="check-list">
                     <img src="https://static.tildacdn.com/tild3661-3232-4638-b734-393761636537/____.png" alt="Check list">
                     <p>Чек лист по <br> поиску клиентов</p>
@@ -143,7 +188,7 @@
                     <p class="price-new">Для участников <span class="color-primary">бесплатно</span></p>
                 </div>
                 <div class="text-center">
-                    <button class="btn-primary">Зарегистрируйтесь и получите файл<img src="https://static.tildacdn.com/tild6562-6663-4462-b938-396164666464/__1.png"></button>
+                    <button class="btn-primary register-modal-btn">Зарегистрируйтесь и получите файл<img src="https://static.tildacdn.com/tild6562-6663-4462-b938-396164666464/__1.png"></button>
                 </div>
             </div>
         </div>
@@ -153,7 +198,7 @@
                 <p class="page-desc">вместе с опытным экспертом и владельцем собственных успешных проектов в соцсетях.</p>
                 <div class="row">
                     <div class="photo">
-                        <img src="https://static.tildacdn.com/tild6430-3434-4637-b839-393234636437/Group_2.png" alt="">
+                        <img src="./img/Janna.jpg" alt="Janna">
                     </div>
                     <div class="content">
                         <h3 class="title">Леся Фетисова</h3>
@@ -253,7 +298,6 @@
                 <h2 class="title-primary"><span class="color-primary">Узнайте, как продвигать профили</span> в соцсетях так, <span class="color-primary">чтобы за это платили</span></h2>
                 <form method="POST" class="form">
                     <input type="text" class="form-input" placeholder="Ваше имя...">
-                    <input type="email" class="form-input" placeholder="Ваш E-mail...">
                     <input type="tel" class="form-input" placeholder="Ваш номер телефона...">
                     <div class="text-center">
                         <button class="btn-primary">Записаться на лекцию</span></button>
