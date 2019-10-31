@@ -51,7 +51,7 @@ header {
             }
         }
 
-        @include xs-block {
+        @include sm-block {
             flex-direction: column;
             align-items: center;
 
@@ -209,7 +209,7 @@ header {
         }
     }
 
-    @include xs-block {
+    @include sm-block {
         .navbar-contacts {
             flex-direction: column;
             margin-top: 30px;
