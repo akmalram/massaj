@@ -240,6 +240,7 @@ header .content-img {
   }
   .navbar-inner .telegram a {
     padding: 5px;
+    line-height: 1;
   }
   .navbar-inner .telegram a i {
     font-size: 24px;
@@ -291,6 +292,8 @@ header .content-img {
 
 .check-list .popup-content {
   position: absolute;
+  top: -10px;
+  right: -250px;
   display: none;
   width: 250px;
   font-size: 11px;

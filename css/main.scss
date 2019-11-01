@@ -222,8 +222,6 @@
         @include size-sm(24);
     }
 
-
-
     .page-desc {
         color: #000000;
         font-size: 25px;
@@ -240,12 +238,14 @@
             line-height: 1;
             font-weight: 600;
         }
+
         .desc {
             color: #000000;
             font-size: 24px;
             line-height: 1.1;
             font-weight: 300;
         }
+        
         .info.row {
             margin: 40px 0;
             .item {
@@ -359,6 +359,10 @@
         margin-bottom: 35px;
     }
 
+    .swiper-pagination-bullet-active {
+        background-color: #f43076;
+    }
+
     .swiper-button-next, .swiper-button-prev {
         background: #f43076;
         width: 50px;
@@ -394,13 +398,14 @@
     .page-desc {
         font-size: 20px;
     }
+
     .form {
         margin-top: 50px;
         margin-bottom: 50px;
 
         &-input {
             border-color: #f43076;
-            margin-bottom: 40px;
+            margin-bottom: 30px;
 
             @include xs-block {
                 margin-bottom: 20px;

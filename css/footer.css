@@ -83,13 +83,13 @@ footer .social-links a {
   font-size: 30px;
   display: inline-block;
   margin: 0 15px;
-  color: #333;
+  color: #f43076;
   -webkit-transition: text-shadow .2s;
   transition: text-shadow .2s;
 }
 
 footer .social-links a:hover {
-  text-shadow: 0 0 2px #333;
+  text-shadow: 0 0 2px #f43076;
 }
 
 footer .footer-contacts {
