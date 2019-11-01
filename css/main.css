@@ -166,6 +166,14 @@
   background-size: contain;
 }
 
+.types .title-primary {
+  margin-bottom: 20px;
+}
+
+.types .page-desc {
+  margin-bottom: 10px;
+}
+
 .types .row {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
@@ -181,7 +189,7 @@
   width: calc(33.33333% - 30px);
   max-width: 300px;
   font-size: 20px;
-  padding: 30px 20px;
+  padding: 17px 15px;
   box-sizing: border-box;
   text-align: center;
 }
@@ -216,6 +224,29 @@
   border-radius: 50%;
 }
 
+@media screen and (max-width: 576px) {
+  .types .type {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: left;
+    font-size: 19px;
+    padding: 0;
+    margin: 10px 0;
+  }
+  .types .type span {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    min-width: 70px;
+    min-height: 70px;
+    margin-right: 12px;
+  }
+}
+
 .register {
   padding: 80px 0;
 }
@@ -236,17 +267,18 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 400px;
+  width: 600px;
   max-width: 90%;
   margin: 0 auto;
   margin-top: 50px;
 }
 
+.register .file .text {
+  font-size: 30px;
+}
+
 .register .file img {
-  width: 100px;
+  width: 300px;
 }
 
 .register .price {
@@ -277,25 +309,29 @@
   font-weight: bold;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 768px) {
   .register .file {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    max-width: 90%;
-    margin: 0 auto;
-    margin-top: 20px;
-    font-size: 13px;
+    width: 400px;
   }
   .register .file img {
-    width: 70px;
+    width: 130px;
+  }
+  .register .file .text {
+    font-size: 20px;
+    margin-left: 10px;
   }
   .register .price {
     font-size: 15px;
     margin: 30px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .register .file img {
+    width: 100px;
+  }
+  .register .file .text {
+    font-size: 14px;
   }
 }
 
@@ -332,6 +368,7 @@
   font-size: 50px;
   line-height: 1;
   font-weight: 600;
+  margin-bottom: 20px;
 }
 
 .expert .content .desc {
@@ -339,6 +376,7 @@
   font-size: 24px;
   line-height: 1.1;
   font-weight: 300;
+  margin-bottom: 30px;
 }
 
 .expert .content .info.row {
@@ -397,6 +435,7 @@
   font-size: 20px;
   line-height: 1.55;
   font-weight: 300;
+  font-style: italic;
 }
 
 .expert .photo {
@@ -426,6 +465,15 @@
   }
   .expert .content .title {
     font-size: 30px;
+  }
+  .expert .content .video {
+    margin-bottom: 30px;
+  }
+  .expert .content .video iframe {
+    max-width: 320px;
+    height: 190px;
+    display: block;
+    margin: 0 auto;
   }
   .expert .content .desc {
     font-size: 16px;

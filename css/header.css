@@ -143,8 +143,6 @@ header .btn-primary {
   background-color: #5500ff;
   -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-  -webkit-box-shadow: 0px 0px 30px 3px rgba(119, 81, 197, 0.6);
-          box-shadow: 0px 0px 30px 3px rgba(119, 81, 197, 0.6);
 }
 
 header .btn-primary:hover {
@@ -260,6 +258,46 @@ header .content-img {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   display: inline-block;
+  -webkit-animation: pulse-telegram 2s linear infinite;
+          animation: pulse-telegram 2s linear infinite;
+}
+
+@-webkit-keyframes pulse-telegram {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(7, 126, 185, 0.8);
+            box-shadow: 0 0 0 0 rgba(7, 126, 185, 0.8);
+  }
+  40% {
+    -webkit-box-shadow: 0 0 0px 5px rgba(7, 126, 185, 0.5);
+            box-shadow: 0 0 0px 5px rgba(7, 126, 185, 0.5);
+  }
+  80% {
+    -webkit-box-shadow: 0 0 3px 10px rgba(7, 126, 185, 0);
+            box-shadow: 0 0 3px 10px rgba(7, 126, 185, 0);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0 0 rgba(7, 126, 185, 0);
+            box-shadow: 0 0 0 0 rgba(7, 126, 185, 0);
+  }
+}
+
+@keyframes pulse-telegram {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(7, 126, 185, 0.8);
+            box-shadow: 0 0 0 0 rgba(7, 126, 185, 0.8);
+  }
+  40% {
+    -webkit-box-shadow: 0 0 0px 5px rgba(7, 126, 185, 0.5);
+            box-shadow: 0 0 0px 5px rgba(7, 126, 185, 0.5);
+  }
+  80% {
+    -webkit-box-shadow: 0 0 3px 10px rgba(7, 126, 185, 0);
+            box-shadow: 0 0 3px 10px rgba(7, 126, 185, 0);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0 0 rgba(7, 126, 185, 0);
+            box-shadow: 0 0 0 0 rgba(7, 126, 185, 0);
+  }
 }
 
 .navbar-inner .telegram a:hover, .navbar-inner .telegram a:focus {
@@ -339,6 +377,10 @@ header .content-img {
   }
 }
 
+.check-list i {
+  margin-left: 9px;
+}
+
 .check-list img {
   width: 80px;
   margin-right: 10px;
@@ -359,7 +401,7 @@ header .content-img {
 
 .check-list .popup-content {
   position: absolute;
-  top: -50px;
+  top: 0px;
   right: -250px;
   display: none;
   width: 250px;
@@ -371,6 +413,7 @@ header .content-img {
           box-sizing: border-box;
   padding: 10px 20px;
   border-radius: 15px;
+  background-color: #fff;
 }
 
 .check-list .popup-content h4 {

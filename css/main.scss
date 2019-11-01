@@ -111,6 +111,14 @@
     background: url(https://prestige.uz/wp-content/themes/prestige/img/9.png) no-repeat center center;
     background-size: contain;
 
+    .title-primary {
+        margin-bottom: 20px;
+    }
+
+    .page-desc {
+        margin-bottom: 10px;
+    }
+
     .row {
         justify-content: space-evenly;
     }
@@ -123,7 +131,7 @@
 
         max-width: 300px;
         font-size: 20px;
-        padding: 30px 20px;
+        padding: 17px 15px;
         box-sizing: border-box;
 
         text-align: center;
@@ -140,6 +148,24 @@
             border-radius: 50%;
         }
     }
+
+    @include xs-block {
+        .type {    
+            display: flex;
+            align-items: center;
+            text-align: left;
+            font-size: 19px;
+            padding: 0;
+            margin: 10px 0;
+
+            span {
+                display: flex;
+                min-width: 70px;
+                min-height: 70px;
+                margin-right: 12px;
+            }
+        }
+    }
 }
 
 .register {
@@ -147,15 +173,18 @@
 
     .file {
         display: flex;
-        align-items: center;
 
-        width: 400px;
+        width: 600px;
         max-width: 90%;
         margin: 0 auto;
         margin-top: 50px;
+        
+        .text {
+            font-size: 30px;
+        }
 
         img {
-            width: 100px;
+            width: 300px;
         }
     }
 
@@ -186,27 +215,35 @@
         }
     }
 
-    @include xs-block {
+    @include sm-block {
         .file {
-            display: flex;
-            align-items: center;
-
-            max-width: 90%;
-            margin: 0 auto;
-            margin-top: 20px;
-            font-size: 13px;
+            width: 400px;
     
             img {
-                width: 70px;
+                width: 130px;
+            }
+
+            .text {
+                font-size: 20px;
+                margin-left: 10px;
             }
         }
         .price {
             font-size: 15px;
             margin: 30px;
         }
+    }
 
-        .btn-primary {
+    @include xs-block {
+        .file {
+    
+            img {
+                width: 100px;
+            }
 
+            .text {
+                font-size: 14px;
+            }
         }
     }
 }
@@ -237,6 +274,7 @@
             font-size: 50px;
             line-height: 1;
             font-weight: 600;
+            margin-bottom: 20px;
         }
 
         .desc {
@@ -244,6 +282,7 @@
             font-size: 24px;
             line-height: 1.1;
             font-weight: 300;
+            margin-bottom: 30px;
         }
         
         .info.row {
@@ -287,6 +326,7 @@
                 font-size: 20px;
                 line-height: 1.55;
                 font-weight: 300;
+                font-style: italic;
             }
         }
     }
@@ -320,6 +360,16 @@
         .content {
             .title {
                 font-size: 30px;
+            }
+
+            .video {
+                iframe {
+                    max-width: 320px;
+                    height: 190px;
+                    display: block;
+                    margin: 0 auto;
+                }
+                margin-bottom: 30px;
             }
             
             .desc {

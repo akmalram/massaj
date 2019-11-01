@@ -1,6 +1,7 @@
 @import './navbar';
 @import './smart-grid';
 @import './modal';
+@import './mixins';
 
 $color-primary: #f9eb2d;
 
@@ -148,7 +149,6 @@ header {
         padding: 10px 20px;
         background-color: #5500ff;
         transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-        box-shadow: 0px 0px 30px 3px rgba(119,81,197,0.6);
 
         &:hover {
             background-color: #7840ab;
@@ -250,6 +250,8 @@ header {
             box-sizing: border-box;
             display: inline-block;
 
+            @include pulse(#077eb9, 10, telegram);
+
             &:hover, &:focus {
                 background: #077eb9;
             }
@@ -330,6 +332,10 @@ header {
         display: none;
     }
 
+    i {
+        margin-left: 9px;
+    }
+
     img {
         width: 80px;
         margin-right: 10px;
@@ -350,7 +356,7 @@ header {
 
     .popup-content {
         position: absolute;
-        top: -50px;
+        top: 0px;
         right: -250px;
         display: none;
         width: 250px;
@@ -360,6 +366,8 @@ header {
         box-sizing: border-box;
         padding: 10px 20px;
         border-radius: 15px;
+        background-color: #fff;
+
 
         h4 {
             font-weight: bold;
