@@ -65,6 +65,7 @@ header .header-top .left b {
   }
   header .header-top .date {
     margin-right: 0;
+    margin-bottom: 8px;
     font-size: 16px;
   }
   header .header-top .date span {
@@ -75,6 +76,7 @@ header .header-top .left b {
   }
   header .header-top .date .count {
     font-size: 35px;
+    margin-right: 3px;
   }
   header .header-top .left {
     font-size: 16px;
@@ -147,6 +149,17 @@ header .btn-primary {
 
 header .btn-primary:hover {
   background-color: #7840ab;
+}
+
+header .btn-primary img {
+  top: -6px;
+  right: -40px;
+}
+
+@media screen and (max-width: 576px) {
+  header .btn-primary img {
+    display: none;
+  }
 }
 
 header .content-img {
@@ -239,10 +252,18 @@ header .content-img {
 .navbar-inner .telegram a {
   font-size: 18px;
   color: #fff;
+  background: #0088cc;
+  padding: 11px 7px;
+  border-radius: 5px;
+  -webkit-transition: background-color .3s;
+  transition: background-color .3s;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: inline-block;
 }
 
-.navbar-inner .telegram a:focus, .navbar-inner .telegram a:hover {
-  text-shadow: 0 0 5px #333;
+.navbar-inner .telegram a:hover, .navbar-inner .telegram a:focus {
+  background: #077eb9;
 }
 
 .navbar-inner .phone-call {
@@ -261,25 +282,18 @@ header .content-img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    text-align: right;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
   }
   .navbar-inner .call-order button {
     font-size: 19px;
   }
   .navbar-inner .telegram {
-    margin-left: 0px;
-    -ms-flex-item-align: end;
-        align-self: flex-end;
+    margin: 0;
   }
   .navbar-inner .telegram a {
-    padding: 5px;
-    line-height: 1;
-  }
-  .navbar-inner .telegram a i {
-    font-size: 24px;
-  }
-  .navbar-inner .telegram a span {
-    display: none;
+    font-size: 16px;
   }
   .navbar-inner .phone-call {
     text-align: center;
@@ -293,9 +307,16 @@ header .content-img {
 @media screen and (max-width: 576px) {
   .navbar-inner .call-order button {
     font-size: 15px;
+    padding: 0;
   }
-  .navbar-inner .telegram a i {
-    font-size: 24px;
+  .navbar-inner .telegram a span {
+    display: none;
+  }
+  .navbar-inner .telegram a {
+    padding: 7px 4px;
+  }
+  .navbar-inner .phone-call {
+    margin-bottom: 7px;
   }
   .navbar-inner .phone-call a {
     font-size: 13px;
