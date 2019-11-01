@@ -5,13 +5,12 @@
 $color-primary: #f9eb2d;
 
 header {
-    background: url(../img/table.jpg) no-repeat 80% center;
-    background-size: 40%;
+    background: url(../img/table.jpg) no-repeat 79% bottom;
+    background-size: 45%;
     min-height: 60vh;
 
 
     .header-top {
-        margin-top: 40px;
         display: flex;
 
         .date, .left {
@@ -53,10 +52,44 @@ header {
 
         @include sm-block {
             flex-direction: column;
-            align-items: center;
+            align-items: flex-start;
+            text-align: left;
 
             .date {
                 margin-right: 0;
+                font-size: 16px;
+    
+                span {
+                    font-size: 16px;
+                }
+    
+                .icon {
+                    width: 30px;
+                }
+    
+                .count {
+                    font-size: 35px;
+                }
+            }
+
+            .left {
+                font-size: 16px;
+                text-align: left;
+
+                .icon {
+                    width: 50px;
+                    margin-right: 5px;
+                }
+    
+                b {
+                    font-size: 17px;
+                }
+            }
+        }
+
+        @include xs-block {
+
+            .date {
                 font-size: 13px;
     
                 span {
@@ -82,7 +115,7 @@ header {
                 }
     
                 b {
-                    font-size: 14px;
+                    font-size: 13px;
                 }
             }
         }
@@ -134,18 +167,18 @@ header {
 
         .page-desc {
             max-width: 100%;
+            font-size: 21px;
         }
 
         .page-title {
             margin-top: 30px;
             color: #373a40;
-            font-size: 50px;
+            font-size: 34px;
             line-height: 0.95;
             font-weight: 700;
         }
 
-        .header-top {
-            margin-top: 20px;
+            .header-top {
             justify-content: center;
         }
     }
@@ -154,11 +187,11 @@ header {
         min-height: auto;
 
         .page-title {
-            font-size: 37px;
+            font-size: 30px;
         }
 
         .page-desc {
-            font-size: 20px;
+            font-size: 18px;
             margin: 10px 0;
             margin-bottom: 20px;
         }
@@ -173,17 +206,25 @@ header {
 .navbar-inner {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    padding: 20px 0;
 
     .navbar-contacts {
         display: flex;
         align-items: center;
     }
     
-    .call-order {
+    .call-order button {
+        background: transparent;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
 
-        .btn-primary {
-            padding: 10px 20px;
+        &:hover {
+            text-decoration: underline;
+        }
+
+        &:focus {
+            outline: none;
         }
     }
 
@@ -212,20 +253,18 @@ header {
     @include sm-block {
         .navbar-contacts {
             flex-direction: column;
-            margin-top: 30px;
             text-align: right;
         }
-        
-        .call-order .btn-primary {
-            font-size: 13px;
-            padding: 7px 10px;
+
+        .call-order button {
+            font-size: 19px;
+
         }
-        
-    
+
         .telegram {
             margin-left: 0px;
             align-self: flex-end;
-    
+
             a {
                 padding: 5px;
                 line-height: 1;
@@ -237,9 +276,33 @@ header {
                 }
             }
         }
-    
+
         .phone-call {
             text-align: center;
+            margin-bottom: 4px;
+            a {
+                font-size: 17px;
+            }
+        }
+    }
+
+    @include xs-block {
+        .call-order {
+            button {
+                font-size: 15px;
+            }
+        }
+
+        .telegram {
+
+            a {
+                i {
+                    font-size: 24px;
+                }
+            }
+        }
+
+        .phone-call {
             a {
                 font-size: 13px;
             }
@@ -250,14 +313,14 @@ header {
 .check-list {
     display: flex;
     align-items: center;
+    margin-top: 20px;
 
     @include sm-block {
         display: none;
     }
 
     img {
-        width: 100px;
-        height: 100px;
+        width: 80px;
         margin-right: 10px;
     }
 
@@ -273,9 +336,10 @@ header {
         font-size: 30px;
         color: #f43076;
     }
+
     .popup-content {
         position: absolute;
-        top: -10px;
+        top: -50px;
         right: -250px;
         display: none;
         width: 250px;

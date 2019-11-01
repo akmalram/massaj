@@ -1,11 +1,10 @@
 header {
-  background: url(../img/table.jpg) no-repeat 80% center;
-  background-size: 40%;
+  background: url(../img/table.jpg) no-repeat 79% bottom;
+  background-size: 45%;
   min-height: 60vh;
 }
 
 header .header-top {
-  margin-top: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -59,12 +58,39 @@ header .header-top .left b {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    text-align: left;
   }
   header .header-top .date {
     margin-right: 0;
+    font-size: 16px;
+  }
+  header .header-top .date span {
+    font-size: 16px;
+  }
+  header .header-top .date .icon {
+    width: 30px;
+  }
+  header .header-top .date .count {
+    font-size: 35px;
+  }
+  header .header-top .left {
+    font-size: 16px;
+    text-align: left;
+  }
+  header .header-top .left .icon {
+    width: 50px;
+    margin-right: 5px;
+  }
+  header .header-top .left b {
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  header .header-top .date {
     font-size: 13px;
   }
   header .header-top .date span {
@@ -85,7 +111,7 @@ header .header-top .left b {
     margin-right: 5px;
   }
   header .header-top .left b {
-    font-size: 14px;
+    font-size: 13px;
   }
 }
 
@@ -138,16 +164,16 @@ header .content-img {
   }
   header .page-desc {
     max-width: 100%;
+    font-size: 21px;
   }
   header .page-title {
     margin-top: 30px;
     color: #373a40;
-    font-size: 50px;
+    font-size: 34px;
     line-height: 0.95;
     font-weight: 700;
   }
   header .header-top {
-    margin-top: 20px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -159,10 +185,10 @@ header .content-img {
     min-height: auto;
   }
   header .page-title {
-    font-size: 37px;
+    font-size: 30px;
   }
   header .page-desc {
-    font-size: 20px;
+    font-size: 18px;
     margin: 10px 0;
     margin-bottom: 20px;
   }
@@ -179,9 +205,7 @@ header .content-img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  padding: 20px 0;
 }
 
 .navbar-inner .navbar-contacts {
@@ -193,8 +217,19 @@ header .content-img {
           align-items: center;
 }
 
-.navbar-inner .call-order .btn-primary {
-  padding: 10px 20px;
+.navbar-inner .call-order button {
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.navbar-inner .call-order button:hover {
+  text-decoration: underline;
+}
+
+.navbar-inner .call-order button:focus {
+  outline: none;
 }
 
 .navbar-inner .telegram {
@@ -226,12 +261,10 @@ header .content-img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-top: 30px;
     text-align: right;
   }
-  .navbar-inner .call-order .btn-primary {
-    font-size: 13px;
-    padding: 7px 10px;
+  .navbar-inner .call-order button {
+    font-size: 19px;
   }
   .navbar-inner .telegram {
     margin-left: 0px;
@@ -250,6 +283,19 @@ header .content-img {
   }
   .navbar-inner .phone-call {
     text-align: center;
+    margin-bottom: 4px;
+  }
+  .navbar-inner .phone-call a {
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .navbar-inner .call-order button {
+    font-size: 15px;
+  }
+  .navbar-inner .telegram a i {
+    font-size: 24px;
   }
   .navbar-inner .phone-call a {
     font-size: 13px;
@@ -263,6 +309,7 @@ header .content-img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 20px;
 }
 
 @media screen and (max-width: 768px) {
@@ -272,8 +319,7 @@ header .content-img {
 }
 
 .check-list img {
-  width: 100px;
-  height: 100px;
+  width: 80px;
   margin-right: 10px;
 }
 
@@ -292,7 +338,7 @@ header .content-img {
 
 .check-list .popup-content {
   position: absolute;
-  top: -10px;
+  top: -50px;
   right: -250px;
   display: none;
   width: 250px;

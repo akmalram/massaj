@@ -66,7 +66,7 @@
     }
 
     .title-secondary {
-        margin-bottom: 70px;
+        margin-bottom: 30px;
 
         @include xs-block {
             margin-bottom: 40px;
@@ -291,6 +291,10 @@
         }
     }
 
+    .photo {
+        text-align: center;
+    }
+
     @include sm-block {
         .photo {
             order: 2;
@@ -406,6 +410,7 @@
         &-input {
             border-color: #f43076;
             margin-bottom: 30px;
+            border-radius: 7px;
 
             @include xs-block {
                 margin-bottom: 20px;
