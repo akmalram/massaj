@@ -150,7 +150,7 @@
 }
 
 .result .item .icon {
-  width: 150px;
+  max-width: 150px;
 }
 
 .result .item .text {
