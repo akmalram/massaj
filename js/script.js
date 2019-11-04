@@ -21,4 +21,23 @@ window.addEventListener('DOMContentLoaded', () => {
       strings: ['Профессия массажиста<br>с нуля – всего за<br>1 месяц!']
     });
   });
+
+
+  // Form submit animation
+
+  const formSubmitAnimation = (animationDuration) => {
+    let btn = document.querySelector('.contact-form .form-submit');
+
+    document.querySelector('.contact-form').addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      btn.style.cssText = `animation-duration: ${animationDuration}s`;
+      btn.classList.add('animate');
+      setTimeout( () => {
+        btn.classList.remove('animate');
+      }, animationDuration * 1000);
+    })
+  }
+
+  formSubmitAnimation(3);
 });

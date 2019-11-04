@@ -60,7 +60,7 @@
         </div>
     </div>
 
-    <header>
+    <header style="display: none;">
         <nav class="navbar">
             <div class="container">
 
@@ -132,7 +132,7 @@
     </header>
 
     <main>
-        <div id="for-who" class="for-who">
+        <div style="display: none;" id="for-who" class="for-who">
             <div class="container">
                 <h3 class="title-primary">Плюсы иметь навык <br> массажиста:</h3>
                 <div class="row">
@@ -155,7 +155,7 @@
             </div>
         </div>
 
-        <div id="types" class="types">
+        <div style="display: none;" id="types" class="types">
             <div class="container">
                 <h2 class="title-primary">9 видов массажа<br>всего за один курс</h2>
                 <p class="page-desc text-center">Отработка навыков на приглашенных моделях</p>
@@ -218,7 +218,7 @@
             </div>
         </div>
 
-        <div id="result" class="result">
+        <div style="display: none;" id="result" class="result">
             <div class="container">
                 <h1 class="title-primary">В результате курса вы:</h1>
                 <div class="row">
@@ -268,7 +268,7 @@
             </div>
         </div>
 
-        <div id="register" class="register">
+        <div style="display: none;" id="register" class="register">
             <div class="container">
                 <h2 class="title-primary">Зарегистрируйтесь прямо сейчас и получите на курсе:</h2>
                 <div class="file">
@@ -286,7 +286,7 @@
             </div>
         </div>
 
-        <div id="expert" class="expert">
+        <div style="display: none;" id="expert" class="expert">
             <div class="container">
                 <h2 class="title-primary">Откройте для себя возможности</h2>
                 <p class="page-desc">вместе с опытным экспертом и владельцем собственной школы стилистов</p>
@@ -313,7 +313,7 @@
             </div>
         </div>
 
-        <div id="result" class="result">
+        <div style="display: none;" id="result" class="result">
             <div class="container">
                 <h1 class="title-big">Позвольте себе</h1>
                 <h1 class="title-secondary">Осуществить все свои мечты, с помощью этом курсе, где вы:</h1>
@@ -368,7 +368,7 @@
             </div>
         </div>
 
-        <div id="gallery" class="gallery">
+        <div style="display: none;" id="gallery" class="gallery">
             <div class="container">
                 <h2 class="title-primary">Еще сомневаетесь?<br> Тогда смотрите отзывы о курсе:</h2>
                 <div class="swiper-container">
@@ -393,17 +393,40 @@
             </div>
         </div>
 
-        <div id="contact-form" class="contact-form">
-            <div class="container">
-                <h2 class="title-primary"><span class="color-primary">Узнайте, как продвигать профили</span> в соцсетях
-                    так, <span class="color-primary">чтобы за это платили</span></h2>
-                <form method="POST" class="form">
-                    <input type="text" class="form-input" placeholder="Ваше имя...">
-                    <input type="tel" class="form-input" placeholder="Ваш номер телефона...">
-                    <div class="text-center">
-                        <button class="btn-primary">Записаться на лекцию</span></button>
-                    </div>
-                </form>
+        <div class="contact-form container">
+            <form class="form" method="POST">
+                <h3 class="form-heading">Запишитесь на Курс</h3>
+                <label class="form-label">
+                    <p class="input-label-text">Ваше имя</p>
+                    <input type="text" name="name" class="form-input">
+                </label>
+                <label class="form-label">
+                    <p class="input-label-text">Ваш Email*</p>
+                    <input type="email" name="email" class="form-input">
+                </label>
+                <label class="form-label">
+                    <p class="input-label-text">Ваш Телефон</p>
+                    <input type="tel" name="tel" class="form-input">
+                </label>
+
+                <div class="text-right">
+                    <button type="submit" class="form-submit">
+                        <i class="fab fa-telegram-plane"></i>
+                    </button>
+                </div>
+            </form>
+            <div class="contact-info">
+                <h3 class="form-heading">Контактная информация</h3>
+                <div>
+                    <p><i class="fas fa-map-marker-alt"></i> г.Ташкент, ул. Навои 30А</p>
+                    <p><a href="tel:+998999991614"><i class="fas fa-mobile-alt"></i>+998(99) 999-16-14</a></p>
+                    <p><a href="mailto:info@prestige.uz"><i class="fas fa-envelope"></i>info@prestige.uz</a></p>
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="https://t.me/prestigeuz1"><i class="fab fa-telegram"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
             </div>
         </div>
 
