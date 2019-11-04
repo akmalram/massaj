@@ -13,4 +13,12 @@ window.addEventListener('load', () => {
           prevEl: '.swiper-button-prev',
         },
       });
+
+
+      // Typed initializing
+      $(document).ready(function () {
+          $(".typed").typed({
+              strings: ['Профессия массажиста<br>с нуля – всего за<br>1 месяц!']
+          });
+      });
 });
