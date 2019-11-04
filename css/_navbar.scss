@@ -1,5 +1,6 @@
 @mixin navbar($navbarHeight, $containerWidth, $color-primary) {
     overflow: hidden;
+
     .navbar {
         padding: 20px 0;
         background: #fff;
@@ -34,7 +35,7 @@
                 display: block;
             }
         }
-        
+
 
     }
 
@@ -44,6 +45,7 @@
 
         .social-icons {
             margin-left: 10px;
+
             a {
                 display: block;
                 font-size: 25px;
@@ -82,6 +84,7 @@
             .navbar-inner {
                 flex-wrap: wrap;
             }
+
             .logo {
                 order: 2;
                 width: 33.333%;
@@ -95,11 +98,13 @@
                     span {
                         display: none;
                     }
+
                     width: 33.333%;
                 }
 
                 .social-icons {
-                    display: flex;                    
+                    display: flex;
+
                     a {
                         display: inline-block;
                         margin: 0 5px;
@@ -127,11 +132,13 @@
                     span {
                         display: none;
                     }
+
                     width: 33.333%;
                 }
 
                 .social-icons {
-                    display: flex;                    
+                    display: flex;
+
                     a {
                         display: inline-block;
                         margin: 0 5px;
@@ -143,11 +150,14 @@
         .navbar.slideleft {
             position: relative;
             flex-wrap: wrap;
+
             .phone-call {
                 order: 2;
+
                 span {
                     display: none;
                 }
+
                 width: 33.3333%;
             }
 
@@ -156,7 +166,7 @@
                 width: 33.3333%;
                 text-align: center;
             }
-            
+
         }
     }
 
@@ -170,12 +180,13 @@
 
         .phone-call {
             width: 33.333%;
+
             span {
                 display: none;
             }
         }
     }
-    
+
 }
 
 // Parameters 

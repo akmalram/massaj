@@ -6,16 +6,16 @@ window.addEventListener('DOMContentLoaded', () => {
         let input = document.querySelector('.navbar-search .input-wrapper')
         let modalBackground = document.querySelector('.navbar-search-modal .background');
 
-        if(btn) {
+        if (btn) {
             btn.addEventListener('click', () => {
-                if(window.getComputedStyle(element).visibility == 'hidden') {
+                if (window.getComputedStyle(element).visibility == 'hidden') {
                     element.style.cssText = `visibility: visible; 
                                              opacity: 1;`;
                     input.style.cssText = `opacity: 1;
                                            transform: translateY(0)`;
                 }
             });
-    
+
             modalBackground.addEventListener('click', () => {
                 element.style.cssText = `visibility: hidden; 
                                             opacity: 0;`;

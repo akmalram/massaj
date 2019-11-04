@@ -14,7 +14,8 @@ header {
     .header-top {
         display: flex;
 
-        .date, .left {
+        .date,
+        .left {
             display: flex;
             align-items: center;
         }
@@ -41,7 +42,7 @@ header {
 
         .left {
             font-size: 19px;
-            
+
             .icon {
                 width: 70px;
                 margin-right: 20px;
@@ -55,11 +56,11 @@ header {
         @include md-block {
             .date {
                 font-size: 20px;
-    
+
                 span {
                     font-size: 16px;
                 }
-    
+
                 .count {
                     font-size: 42px;
                 }
@@ -67,7 +68,7 @@ header {
 
             .left {
                 font-size: 20px;
-    
+
                 b {
                     font-size: 21px;
                 }
@@ -83,15 +84,15 @@ header {
                 margin-right: 0;
                 margin-bottom: 8px;
                 font-size: 16px;
-    
+
                 span {
                     font-size: 16px;
                 }
-    
+
                 .icon {
                     width: 30px;
                 }
-    
+
                 .count {
                     font-size: 35px;
                     margin-right: 3px;
@@ -106,7 +107,7 @@ header {
                     width: 50px;
                     margin-right: 5px;
                 }
-    
+
                 b {
                     font-size: 17px;
                 }
@@ -117,15 +118,15 @@ header {
 
             .date {
                 font-size: 13px;
-    
+
                 span {
                     font-size: 13px;
                 }
-    
+
                 .icon {
                     width: 30px;
                 }
-    
+
                 .count {
                     font-size: 30px;
                 }
@@ -139,7 +140,7 @@ header {
                     width: 50px;
                     margin-right: 5px;
                 }
-    
+
                 b {
                     font-size: 13px;
                 }
@@ -192,6 +193,7 @@ header {
     @include sm-block {
         background: none;
         text-align: center;
+
         .content-img {
             display: block;
             margin-top: 50px;
@@ -210,7 +212,7 @@ header {
             font-weight: 700;
         }
 
-            .header-top {
+        .header-top {
             justify-content: center;
         }
     }
@@ -248,7 +250,7 @@ header {
     .logo {
         width: 130px;
     }
-    
+
     .call-order button {
         background: transparent;
         border: none;
@@ -279,7 +281,8 @@ header {
 
             @include pulse(#077eb9, 10, telegram);
 
-            &:hover, &:focus {
+            &:hover,
+            &:focus {
                 background: #077eb9;
             }
         }
@@ -287,6 +290,7 @@ header {
 
     .phone-call {
         text-align: right;
+
         a {
             font-size: 19px;
             color: #333;
@@ -341,6 +345,7 @@ header {
         .phone-call {
             text-align: center;
             margin-bottom: 4px;
+
             a {
                 font-size: 17px;
             }

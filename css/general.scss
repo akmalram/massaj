@@ -54,7 +54,7 @@ body {
 .hide-sm {
     @include sm-block {
         display: none !important;
-    };
+    }
 }
 
 a {

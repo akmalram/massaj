@@ -10,7 +10,8 @@ header .header-top {
   display: flex;
 }
 
-header .header-top .date, header .header-top .left {
+header .header-top .date,
+header .header-top .left {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

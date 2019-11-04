@@ -3,6 +3,7 @@
 
 footer {
     @include content-padding();
+
     .container {
         max-width: 800px;
     }
@@ -15,10 +16,12 @@ footer {
         justify-content: space-evenly;
     }
 
-    .left, .right {
+    .left,
+    .right {
         @include col();
         @include size(12);
         @include size-sm(20);
+
         @include sm-block {
             margin: 0;
             margin-bottom: 40px;
