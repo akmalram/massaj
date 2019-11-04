@@ -21,35 +21,53 @@ header .header-top .date, header .header-top .left {
 
 header .header-top .date {
   margin-right: 30px;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 header .header-top .date span {
-  font-size: 18px;
+  font-size: 16px;
   display: block;
 }
 
 header .header-top .date .icon {
-  width: 50px;
+  width: 45px;
 }
 
 header .header-top .date .count {
   color: #f43076;
-  font-size: 50px;
+  font-size: 41px;
   font-weight: bold;
 }
 
 header .header-top .left {
-  font-size: 21px;
+  font-size: 19px;
 }
 
 header .header-top .left .icon {
-  width: 80px;
+  width: 70px;
   margin-right: 20px;
 }
 
 header .header-top .left b {
-  font-size: 24px;
+  font-size: 22px;
+}
+
+@media screen and (max-width: 1024px) {
+  header .header-top .date {
+    font-size: 20px;
+  }
+  header .header-top .date span {
+    font-size: 16px;
+  }
+  header .header-top .date .count {
+    font-size: 42px;
+  }
+  header .header-top .left {
+    font-size: 20px;
+  }
+  header .header-top .left b {
+    font-size: 21px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -228,10 +246,14 @@ header .content-img {
           align-items: center;
 }
 
+.navbar-inner .logo {
+  width: 130px;
+}
+
 .navbar-inner .call-order button {
   background: transparent;
   border: none;
-  font-size: 24px;
+  font-size: 22px;
   cursor: pointer;
 }
 
@@ -248,7 +270,7 @@ header .content-img {
 }
 
 .navbar-inner .telegram a {
-  font-size: 18px;
+  font-size: 16px;
   color: #fff;
   background: #0088cc;
   padding: 11px 7px;
@@ -309,12 +331,31 @@ header .content-img {
 }
 
 .navbar-inner .phone-call a {
-  font-size: 21px;
+  font-size: 19px;
   color: #333;
   text-decoration: underline;
 }
 
+@media screen and (max-width: 1024px) {
+  .navbar-inner .call-order button {
+    font-size: 19px;
+  }
+  .navbar-inner .telegram a {
+    font-size: 16px;
+  }
+  .navbar-inner .phone-call a {
+    font-size: 17px;
+  }
+}
+
 @media screen and (max-width: 768px) {
+  .navbar-inner {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .navbar-inner .logo {
+    width: 100%;
+  }
   .navbar-inner .navbar-contacts {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -343,6 +384,9 @@ header .content-img {
 }
 
 @media screen and (max-width: 576px) {
+  .navbar-inner .logo img {
+    width: 120px;
+  }
   .navbar-inner .call-order button {
     font-size: 15px;
     padding: 0;

@@ -21,33 +21,56 @@ header {
 
         .date {
             margin-right: 30px;
-            font-size: 25px;
+            font-size: 20px;
 
             span {
-                font-size: 18px;
+                font-size: 16px;
                 display: block;
             }
 
             .icon {
-                width: 50px;
+                width: 45px;
             }
 
             .count {
                 color: #f43076;
-                font-size: 50px;
+                font-size: 41px;
                 font-weight: bold;
             }
         }
 
         .left {
-            font-size: 21px;
+            font-size: 19px;
+            
             .icon {
-                width: 80px;
+                width: 70px;
                 margin-right: 20px;
             }
 
             b {
-                font-size: 24px;
+                font-size: 22px;
+            }
+        }
+
+        @include md-block {
+            .date {
+                font-size: 20px;
+    
+                span {
+                    font-size: 16px;
+                }
+    
+                .count {
+                    font-size: 42px;
+                }
+            }
+
+            .left {
+                font-size: 20px;
+    
+                b {
+                    font-size: 21px;
+                }
             }
         }
 
@@ -221,11 +244,15 @@ header {
         display: flex;
         align-items: center;
     }
+
+    .logo {
+        width: 130px;
+    }
     
     .call-order button {
         background: transparent;
         border: none;
-        font-size: 24px;
+        font-size: 22px;
         cursor: pointer;
 
         &:hover {
@@ -241,7 +268,7 @@ header {
         margin-left: 10px;
 
         a {
-            font-size: 18px;
+            font-size: 16px;
             color: #fff;
             background: #0088cc;
             padding: 11px 7px;
@@ -261,13 +288,39 @@ header {
     .phone-call {
         text-align: right;
         a {
-            font-size: 21px;
+            font-size: 19px;
             color: #333;
             text-decoration: underline;
         }
     }
 
+    @include md-block {
+
+        .call-order button {
+            font-size: 19px;
+        }
+
+        .telegram {
+
+            a {
+                font-size: 16px;
+            }
+        }
+
+        .phone-call {
+            a {
+                font-size: 17px;
+            }
+        }
+    }
+
     @include sm-block {
+        flex-wrap: wrap;
+
+        .logo {
+            width: 100%;
+        }
+
         .navbar-contacts {
             flex-direction: column;
             align-items: flex-end;
@@ -275,7 +328,6 @@ header {
 
         .call-order button {
             font-size: 19px;
-
         }
 
         .telegram {
@@ -296,6 +348,10 @@ header {
     }
 
     @include xs-block {
+        .logo img {
+            width: 120px;
+        }
+
         .call-order {
             button {
                 font-size: 15px;
