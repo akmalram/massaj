@@ -1,4 +1,4 @@
-window.addEventListener('load', () => {
+window.addEventListener('DOMContentLoaded', () => {
 
     var swiper = new Swiper('.swiper-container', {
         autoHeight: true, //enable auto height
