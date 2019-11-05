@@ -18,11 +18,11 @@
         0% {
             box-shadow: 0 0 0 0 rgba($pulse, .8);
         }
-    
+
         40% {
             box-shadow: 0 0 0px #{$width / 2}px rgba($pulse, .5);
         }
-    
+
         80% {
             box-shadow: 0 0 3px #{$width}px rgba($pulse, 0);
         }

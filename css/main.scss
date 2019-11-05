@@ -96,7 +96,8 @@
         margin-bottom: 30px;
 
         .icon {
-            max-width: 150px;
+            width: 70px;
+            flex-shrink: 0;
         }
 
         .text {
@@ -464,10 +465,11 @@ main {
 }
 
 .contact-form {
+    margin-top: 60px;
+    margin-bottom: 60px;
     display: flex;
     flex-wrap: wrap;
     box-shadow: 0 20px 60px #0000002c;
-    margin-bottom: 50px;
     padding: 0;
     border-radius: 3px;
     overflow: hidden;
@@ -491,7 +493,6 @@ main {
 
         position: relative;
         transition: all .3s ease-in-out;
-
     }
 
     .input-label-text {
@@ -522,13 +523,23 @@ main {
     }
 
     .form-submit {
-        width: 70px;
         height: 70px;
         border: none;
-        border-radius: 50%;
+        display: inline-flex;
+        padding: 0 20px;
+        align-items: center;
+        border-radius: 50px;
         background-color: #f43076;
         overflow: hidden;
         cursor: pointer;
+        @include pulse( #f43076, 20, submit);
+        color: #fff;
+
+        span {
+            display: inline-block;
+            margin-right: 10px;
+            font-size: 24px;
+        }
 
         i {
             font-size: 40px;
@@ -647,7 +658,6 @@ main {
         }
 
         .form-submit {
-            width: 50px;
             height: 50px;
 
             i {
