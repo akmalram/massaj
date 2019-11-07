@@ -18,7 +18,8 @@ window.addEventListener('DOMContentLoaded', () => {
   // Typed initializing
   $(document).ready(function () {
     $(".typed").typed({
-      strings: ['Профессия массажиста<br>с нуля – всего за<br>1 месяц!']
+      strings: ['Профессия массажиста<br>с нуля – всего за<br>1 месяц!', 'Освойте одну из самых <br> прибыльных профессий <br> всего за месяц'],
+      loop: true
     });
   });
 
